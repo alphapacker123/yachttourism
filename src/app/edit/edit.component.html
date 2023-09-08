@@ -1,0 +1,74 @@
+
+<!-- <div class=" p-5 container w-50 text-center" style="background-color: aquamarine;">
+    <h1>EDIT PRODUCT</h1>
+
+    <form (ngSubmit)="updateProduct()" [formGroup]="editForm" action="" class="container border " id="g">
+
+        <input  formControlName="pid" type="text" class="form-control mt-3 p-2" placeholder="pid" name="pd" id="pid">
+        <div *ngIf="(this.editForm.get('pid')?.errors)&&(this.editForm.get('pid')?.touched)">
+            <p class="text-danger">only numbers work </p>
+        </div>
+        <input  formControlName="boatName" type="text" class="form-control mt-3 p-2" placeholder="Boat name" name="pd5" id="pid5">
+        <div *ngIf="(this.editForm.get('boatName')?.errors)&&(this.editForm.get('boatName')?.touched)">
+            <p class="text-danger">alphabets only </p>
+        </div>
+
+        <input  formControlName="description" type="text" class="form-control mt-3 p-2" placeholder="description" name="pd6" id="pid6">
+        <div *ngIf="(this.editForm.get('description')?.errors)&&(this.editForm.get('description')?.touched)">
+            <p class="text-danger">alphabets only </p>
+        </div>
+
+
+
+        <input  formControlName="destination" type="text" class="form-control mt-3 p-2" placeholder="Destination" name="pd1" id="pid1">
+        <div *ngIf="(this.editForm.get('destination')?.errors)&&(this.editForm.get('destination')?.touched)">
+            <p class="text-danger">alphabets only </p>
+        </div>
+
+        <input  formControlName="price" type="text" class="form-control mt-3 p-2" placeholder="price" name="pd2" id="pid2">
+        <div *ngIf="(this.editForm.get('price')?.errors)&&(this.editForm.get('price')?.touched)">
+            <p class="text-danger">only numbers work </p>
+        </div>
+
+        <input formControlName="isAvailable" type="text" class="form-control mt-3 p-2" placeholder="Is Available" name="pd3" id="pid3">
+        <div *ngIf="(this.editForm.get('pid')?.errors)&&(this.editForm.get('pid')?.touched)">
+            <p class="text-danger">only alphabets </p>
+        </div>
+
+        <input  formControlName="productImage" type="text" class="form-control mt-3 p-2" placeholder="image url" name="pd4" id="pid4">
+        <div *ngIf="(this.editForm.get('productImage')?.errors)&&(this.editForm.get('productImage')?.touched)">
+            <p class="text-danger">  </p>
+        </div>
+     
+     
+
+
+
+ <button type="submit" class="btn  p-6 m-3" style="background-color: blueviolet;"> add</button>
+
+
+</form>
+
+</div> -->
+
+
+
+<div class=" p-5 container w-50 text-center">
+    <h1>Update Product</h1>
+
+    <form (ngSubmit)="updateProduct()" action="" class="container border " id="d">
+
+        <input [(ngModel)]="pdata.pid" type="text" class="form-control mt-3 p-2" placeholder="pid" name="pname3" id="pid9">
+        <input [(ngModel)]="pdata.boatName" type="text" class="form-control mt-3 p-2" placeholder="boatName" name="pname2" id="pid8">
+        <input [(ngModel)]="pdata.destination" type="text" class="form-control mt-3 p-2" placeholder="Destination" name="pname1" id="pid2">
+        <input  [(ngModel)]="pdata.description" type="text" class="form-control mt-3 p-2" placeholder="Description" name="des" id=" pid3">
+        <input  [(ngModel)]="pdata.price" type="text" class="form-control mt-3 p-2" placeholder="Price" name="pr" id="pid4">
+        <input  [(ngModel)]="pdata.productImage" type="text" class="form-control mt-3 p-2" placeholder="Image url" name="img" id="pid5">
+        <input  [(ngModel)]="pdata.isAvailable" type="text" class="form-control mt-3 p-2" placeholder="isAvailable" name="rev" id="pid7">
+
+        <button   type="submit" class="btn btn-primary p-4 m-3"> edit</button>
+
+    </form>
+
+
+</div>

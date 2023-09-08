@@ -1,0 +1,54 @@
+<div class=" container w-75 pt-5  mt-5" style="background-color: rgb(4, 4, 42);">
+
+
+
+    <form [formGroup]="registerForm" (ngSubmit)="register()" action="" style="width: 100%;">
+
+        <div>
+            <input formControlName="name" id="Name" name="n1" style="width: 100%; margin-bottom: 10px;" type="text"  placeholder="name">
+
+        </div>
+        <div *ngIf="(this.registerForm.get('name')?.errors)&&(this.registerForm.get('name')?.touched)">
+            <p class="text-danger">only upper case works </p>
+        </div>
+
+        <div>
+            <input formControlName="uname" id="un" name="user" style="width: 100%; margin-bottom: 10px;" type="text"  placeholder="username">
+
+        </div>
+
+        <div *ngIf="(this.registerForm.get('uname')?.errors)&&(this.registerForm.get('uname')?.touched)">
+            <p class="text-danger">must be smallcase,uppercase or numbers </p>
+        </div>
+        
+        <div>
+            <input formControlName="mail" id="eml" name="mail1" style="width: 100%; margin-bottom: 10px;" type="email" placeholder="email">
+
+        </div>
+        <div>
+            <input formControlName="psw" id="pw" name="passw" style="width: 100%; margin-bottom: 10px;" type="password" placeholder="password">
+
+        </div>
+        <div *ngIf="(this.registerForm.get('psw')?.errors)&&(this.registerForm.get('psw')?.touched)">
+            <p class="text-danger">only numbers work </p>
+        </div>
+
+        <div>
+            <input formControlName="cpsw" style="width: 100%; margin-bottom: 10px;" type="password" placeholder="confirmpassword">
+
+        </div>
+        <div *ngIf="pswCheck">
+            <p class="text-danger">password does not match</p>
+        </div>
+
+
+        <div >
+            <button class="mb-2" type="submit" style="width: 100px; border-radius: 15px; ; background-color: antiquewhite; ">Sign
+                up</button>
+        </div>
+
+
+    </form>
+   
+</div>
+

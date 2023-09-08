@@ -1,0 +1,33 @@
+
+
+.boat img{
+
+    height: 50px;
+    
+    width: 100px;
+    margin-bottom: 10px;
+    
+
+    animation: boat 2s linear infinite;
+}
+
+@keyframes boat{
+
+0%{
+    transform: rotate(0deg);
+}
+25%{
+    transform: rotate(-2deg);
+}
+50%{
+    transform: rotate(0deg);
+}
+75%{
+    transform: rotate(2deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+
+
+}

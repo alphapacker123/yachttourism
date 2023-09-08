@@ -1,0 +1,38 @@
+
+<app-header></app-header>
+
+
+<section class="py-5" >
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"  >
+
+            
+            <div *ngFor=" let i of filterData | search:searchData:'destination' " class="col mb-5" >
+
+
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img  style="height: 300px;" class="card-img-top" src= "{{i.productImage}}"   alt="img" />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color: aquamarine;">
+                        <div class="text-center" >
+                            <!-- Product name-->{{i.boatName}}
+                            <h5>Destination: <br>{{i.destination}}</h5>
+                            <h5 class="fw-bolder"></h5>
+                            <!-- Product price-->
+                           Rs{{i.price}}/week
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 "  style="background-color: rgb(189, 224, 154);">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-2" href="booknow/{{i.pid}}">More Details </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-footer></app-footer>

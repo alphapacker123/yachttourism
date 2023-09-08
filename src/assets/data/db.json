@@ -1,0 +1,165 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "boatName": "2013 Riva 63' Virtus",
+      "categoryId": 1,
+      "description": "2013 Motor yacht",
+      "price": 120000,
+      "isAvailable": true,
+      "destination":"Srilanka",
+      "productImage": "https://i.postimg.cc/mZ827Wtk/yacht1home.jpg",
+      "rating": 4.3,
+      "review": " monoslin: Luxurious yacht,enjoyed every bit of the stay"
+      
+    }, {
+      "id": 2,
+      "boatName": "2015 Benetti Delfino 93",
+      "categoryId": 1,
+      "description": "Motor Yacht 2015",
+      "price": 170000,
+      "isAvailable": true,
+      "destination":"Andaman Islands",
+      "productImage": "https://i.postimg.cc/0NY9QLT8/yacht2home.jpg",
+      "rating": 4.8,
+      "review": "beethoven: Luxurious yacht,with well trained crew"
+      
+    }, {
+      "id": 3,
+      "boatName": "2022 Silver Yachts Superyacht Catamaran",
+      "categoryId": 1,
+      "description": "2022 Motor yacht cata217",
+      "price": 123000,
+      "isAvailable": true,
+      "destination":"Maldives",
+      "productImage": "https://i.postimg.cc/qMFJZccd/yacht3home.jpg",
+      "rating": 4.9,
+      "review": "Rishiraj: beautiful destination"
+      
+    }, {
+      "id": 4,
+      "boatName": "2022 Beneteau GRAN TURISMO 41",
+      "categoryId": 1,
+      "description": "2022 Motor Turismo",
+      "price": 129000,
+      "isAvailable": true,
+      "destination":"Dubai",
+      "productImage": "https://i.postimg.cc/jSJxVWvn/yacht4home.jpg",
+      "rating": 4.4,
+      "review": "lucas: wonderful Experience with stunning views"
+      
+    }, {
+      "id": 5,
+      "boatName": "2023 Fountaine Pajot Tanna 47",
+      "categoryId": 1,
+      "description": "2023 pajot212white Motor yacht",
+      "price": 120000,
+      "isAvailable": true,
+      "destination":"Lakshadweep",
+      "productImage": "https://i.postimg.cc/fbnwMwg2/yacht5home.jpg",
+      "rating": 4.3,
+      "review": " Brad: Luxurious yacht,enjoyed every bit of the stay"
+      
+    }, {
+      "id": 6,
+      "boatName": "2015 Benetti Delfino 93",
+      "categoryId": 1,
+      "description": "Motor Yacht 2015",
+      "price": 170000,
+      "isAvailable": true,
+      "destination":"Andaman Islands",
+      "productImage": "https://i.postimg.cc/j5RtJMTy/yacht6home.jpg",
+      "rating": 4.8,
+      "review": "Hardeep singh: Luxurious yacht,with well trained crew"
+      
+    }, {
+      "id": 7,
+      "boatName": "2022 Silver Yachts Superyacht Catamaran",
+      "categoryId": 1,
+      "description": "2022 Motor yacht cata217",
+      "price": 123000,
+      "isAvailable": true,
+      "destination":"Maldives",
+      "productImage": "https://i.postimg.cc/02j5fXwf/yacht7home.jpg",
+      "rating": 4.9,
+      "review": "Riswan: beautiful destination"
+      
+    }, {
+      "id": 8,
+      "boatName": "2022 Beneteau GRAN TURISMO 41",
+      "categoryId": 1,
+      "description": "2022 Motor Turismo",
+      "price": 129000,
+      "isAvailable": true,
+      "destination":"Dubai",
+      "productImage": "https://i.postimg.cc/cHTZ7f12/yacht8home.jpg",
+      "rating": 4.4,
+      "review": "Habeeb: wonderful Experience with stunning views"
+      
+    },{
+      "id": 9,
+      "boatName": "2013 Riva 63' Virtus",
+      "categoryId": 1,
+      "description": "2013 Motor yacht",
+      "price": 120000,
+      "isAvailable": true,
+      "destination":"Srilanka",
+      "productImage": "https://i.postimg.cc/T1wxthpw/yacht9home.jpg",
+      "rating": 4.3,
+      "review": " monoslin: Luxurious yacht,enjoyed every bit of the stay"
+      
+    }, {
+      "id": 10,
+      "boatName": "2018 Benetti Delfino 34",
+      "categoryId": 1,
+      "description": "Motor Yacht 2015",
+      "price": 170000,
+      "isAvailable": true,
+      "destination":"Andaman Islands",
+      "productImage": "https://i.postimg.cc/d3xYpvy9/yacht10home.jpg",
+      "rating": 4.8,
+      "review": "beethoven: Luxurious yacht,with well trained crew"
+      
+    }, {
+      "id": 11,
+      "boatName": "2022 Silver Yachts brunettoos",
+      "categoryId": 1,
+      "description": "2022  yacht cata217",
+      "price": 123000,
+      "isAvailable": true,
+      "destination":"Maldives",
+      "productImage": "https://i.postimg.cc/9X8CrPnq/yacht11home.jpg",
+      "rating": 4.9,
+      "review": "Rishiraj: beautiful destination"
+      
+    }, {
+      "id": 12,
+      "boatName": "2022 Beneteau Gerald 41",
+      "categoryId": 1,
+      "description": "2022 Motor Turismo2167",
+      "price": 129000,
+      "isAvailable": true,
+      "destination":"Dubai",
+      "productImage": "https://i.postimg.cc/02zxm6TX/yacht12home.jpg",
+      "rating": 4.4,
+      "review": "lucas: wonderful Experience with stunning views"
+      
+    },{
+      "id": 13,
+      "boatName": "2022 Catamaran waterboat",
+      "categoryId": 1,
+      "description": "2022 Motor yacht ",
+      "price": 123000,
+      "isAvailable": true,
+      "destination":"Singapore",
+      "productImage": "https://i.postimg.cc/ncNx1FZF/yacht13home.jpg",
+      "rating": 4.9,
+      "review": "Riswan: beautiful destination"
+      
+    }
+    
+    
+    
+    
+  ]
+}

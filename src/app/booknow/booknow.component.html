@@ -1,0 +1,144 @@
+<app-header></app-header>
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src={{pdata.productImage}}
+                    alt="productimage" /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">{{pdata.description}}</div>
+                <h1 class="display-5 fw-bolder">{{pdata.boatName}}</h1>
+                <h2 class="display-5 fw-bolder fs-3">Destination:{{pdata.destination}}</h2>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through"></span>
+                    <span></span>
+                </div>
+                <p class="lead"></p>
+                <p class="lead fs-3">Rating:{{pdata.rating}} </p>
+                <p class="lead fs-3">Review : {{pdata.review}}</p>
+                <p class="lead fs-3">isAvailable : {{pdata.isAvailable}}</p>
+                <div class="d-flex">
+                   
+
+                       
+                        <button id="b2" class="btn btn-outline-danger flex-shrink-0 ms-2 me-2 col-9  " data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: brown;">booknow</button>
+
+
+                    <button class="btn btn-outline-danger flex-shrink-0 ms-2 me-2" type="button">
+
+                        <a href="delete/{{pdata.pid}}" style="text-decoration: none;color:black;">
+                            Delete
+
+                        </a> </button>
+
+
+                        <button class="btn btn-outline-danger flex-shrink-0 ms-2 me-2" type="button">
+
+                            <a href="edit/{{pdata.pid}}" style="text-decoration: none;color:black;">
+                                Edit
+    
+                            </a> </button> 
+                        
+                       
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr style= "height: 30px; color: brown; ">
+<div>
+<p  style="font-size: 1.4rem; padding-left: 5px; margin-left: 5px; margin-right: 5px;">
+
+    Selecting your luxury yacht charter is where your incredible adventure begins. Whether it's a private, crewed, or corporate yacht rental you seek, we deliver a carefully curated charter fleet tailored to your needs. Browse motor yachts, superyachts, sailing yachts, catamarans and even luxury gulet charters using our advanced search tool, perusing yacht rentals in perennial favorite yachting destinations to the most far-flung. Filter by yacht features and toys on board to craft an experience that fully indulges all your senses.
+
+
+    Take the first step and look now: it's time to start living.
+
+</p>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       
+        <div class="modal-body text-center" style="background-color: rgb(30, 192, 237);">
+  
+          <h1 class="text-center">Hooray!book now</h1>
+          
+          <form  [formGroup]="bookForm" action=""   id="s">
+  <input formControlName="location"  type="text" class="form-control mb-2" id="f1" name="toacn1" placeholder="Destination">
+  <div *ngIf="(this.bookForm.get('location')?.errors)&&(this.bookForm.get('location')?.touched)">
+    <p class="text-danger">numbers and alphabets only </p>
+</div>
+
+  <input formControlName="mail"  type="text" class="form-control mb-2" id="f2" name="toacn2" placeholder="email">
+  <div *ngIf="(this.bookForm.get('mail')?.errors)&&(this.bookForm.get('mail')?.touched)">
+    <p class="text-danger">numbers and alphabets only </p>
+</div>
+
+  <input  formControlName="phone" type="text" class="form-control mb-2" id="f3" name="toacn3" placeholder="Phone, with country code">
+  <div *ngIf="(this.bookForm.get('phone')?.errors)&&(this.bookForm.get('phone')?.touched)">
+    <p class="text-danger">numbers  only </p>
+</div>
+    
+  <input formControlName="date"  type="Date" class="form-control mb-2" id="f4" name="amnt" placeholder="Date">
+  <div *ngIf="(this.bookForm.get('date')?.errors)&&(this.bookForm.get('date')?.touched)">
+    <p class="text-danger">numbers  only </p>
+</div>
+  <input formControlName="request"  type="text" class="form-control mb-2" id="f5" name="pass1" placeholder="special request for this trip">
+  <div *ngIf="(this.bookForm.get('request')?.errors)&&(this.bookForm.get('request')?.touched)">
+    <p class="text-danger">alphabets only </p>
+</div>
+  <button (click)="booknow()" class="btn btn-info mt-4">booknow</button>
+          </form>
+  
+  
+        </div>
+        <div class="modal-footer" style="background-color: blueviolet;">
+          <p class="text-white   fs-5" style="margin-right: 30%;"></p>
+          <button type="button" class="btn  btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

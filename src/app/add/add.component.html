@@ -1,0 +1,71 @@
+<div class=" p-5 container w-50 text-center" style="background-color: aquamarine;">
+    <h1>Add New Product</h1>
+
+    <form (ngSubmit)="addProduct()" [formGroup]="addForm" action="" class="container border " id="d">
+
+        <input formControlName="pid" type="text" class="form-control mt-3 p-2" placeholder="pid" name="pd" id="pid">
+        <div *ngIf="(this.addForm.get('pid')?.errors)&&(this.addForm.get('pid')?.touched)">
+            <p class="text-danger">only numbers work </p>
+        </div>
+     
+     
+        
+<input formControlName="boatName" type="text" class="form-control mt-3 p-2" placeholder="boatName" name="pname" id="pid1">
+<div *ngIf="(this.addForm.get('boatName')?.errors)&&(this.addForm.get('boatName')?.touched)">
+    <p class="text-danger">numbers and alphabets only </p>
+</div>
+
+<input formControlName="destination" type="text" class="form-control mt-3 p-2" placeholder="Destination" name="pname" id="pid1">
+<div *ngIf="(this.addForm.get('destination')?.errors)&&(this.addForm.get('destination')?.touched)">
+    <p class="text-danger"> alphabets only </p>
+</div>
+
+<input formControlName="categoryId" type="text" class="form-control mt-3 p-2" placeholder="Category id" name="cid" id="pid2">
+<div *ngIf="(this.addForm.get('categoryId')?.errors)&&(this.addForm.get('categoryId')?.touched)">
+    <p class="text-danger">numbers only </p>
+</div>
+
+
+
+<input formControlName="description" type="text" class="form-control mt-3 p-2" placeholder="Description" name="des" id=" pid3">
+<div *ngIf="(this.addForm.get('description')?.errors)&&(this.addForm.get('description')?.touched)">
+    <p class="text-danger">alphabets and numbers only </p>
+</div>
+
+
+
+<input formControlName="price" type="text" class="form-control mt-3 p-2" placeholder="Price" name="pr" id="pid4">
+<div *ngIf="(this.addForm.get('price')?.errors)&&(this.addForm.get('price')?.touched)">
+    <p class="text-danger">numbers only </p>
+</div>
+
+<input formControlName="productImage" type="text" class="form-control mt-3 p-2" placeholder="Image url" name="img" id="pid5">
+<div *ngIf="(this.addForm.get('productImage')?.errors)&&(this.addForm.get('productImage')?.touched)">
+    <p class="text-danger">numbers only </p>
+</div>
+
+<input formControlName="rating" type="text" class="form-control mt-3 p-2" placeholder="Rating" name="ra" id="pid-6">
+<div *ngIf="(this.addForm.get('rating')?.errors)&&(this.addForm.get('rating')?.touched)">
+    <p class="text-danger">No decimals </p>
+</div>
+
+
+<input formControlName="review" type="text" class="form-control mt-3 p-2" placeholder="Review" name="rev" id="pid7">
+<div *ngIf="(this.addForm.get('review')?.errors)&&(this.addForm.get('review')?.touched)">
+    <p class="text-danger">numbers only </p>
+</div>
+
+
+<input formControlName="isAvailable" type="text" class="form-control mt-3 p-2" placeholder="isAvailable" name="rev" id="pid7">
+<div *ngIf="(this.addForm.get('isAvailable')?.errors)&&(this.addForm.get('isAvailable')?.touched)">
+    <p class="text-danger">numbers only </p>
+</div>
+
+
+
+ <button type="submit" class="btn  p-6 m-3" style="background-color: blueviolet;"> add</button>
+
+
+</form>
+
+</div>
